@@ -92,6 +92,9 @@ a {
 .header .logo-img {
   height: 50px;
 }
+.header .logo-img:hover{
+  backdrop-filter: box-shadow(0 0 10px var(--dager));
+}
 
 .header .list {
   display: flex;
@@ -107,30 +110,69 @@ a {
   gap: 30px;
   letter-spacing: 1px;
 }
-
-.header .list ul li a{
+.header .list ul li{
+  position: relative;
+}
+.header .list ul li a {
   color: var(--white);
   font-family: var(--poppins);
   text-transform: uppercase;
   font-weight: 600;
   font-size: var(--fs-16);
-  transition: all .3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   position: relative;
+  padding-bottom: 2px;
 }
-.header .list ul li a:hover{
+.header .list ul li a:hover {
   color: var(--dager);
 }
-.header .list ul li a::before{
+.header .list ul li a::after {
   content: "";
-  width: 100px;
-  height: 2px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
   background-color: var(--dager);
+  transition: all .3s ease-in-out;
 }
-/* .header .list ul li a::after:hover{
+.header .list ul li a:hover::after{
   width: 100%;
-} */
+}
 
-.header .list .search-box{
+.header .list .country-list{
+  position: absolute;
+  top: 25px;
+  left: -55px;
+  width: 210px;
+  height: 350px;
+  display: none;
+  justify-content: space-a;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--gray-15);
+  padding: 20px;
+  border-radius: 1rem;
+  /* transition: all .7s ease-in-out; */
+}
+.country:hover .country-list{
+  display: flex;
+}
+.header .list .country-list button{
+  width: 170px;
+  padding: .7rem;
+  border: none;
+  color: var(--white);
+  background-color: transparent;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+.header .list .country-list button:hover{
+  background-color: var(--gray-22);
+}
+
+.header .list .search-box {
   width: 400px;
   height: 40px;
   background-color: var(--gray-22);
@@ -140,12 +182,14 @@ a {
   padding: 20px;
   border-radius: 50px;
   gap: 1rem;
+  border: 2px solid transparent;
+  transition: all .3s ease-in-out;
 }
-.header .list .search-box i{
+.header .list .search-box i {
   font-size: var(--fs-16);
   color: var(--white);
 }
-.header .list .search-box .search{
+.header .list .search-box .search {
   width: 80%;
   height: 40px;
   outline: none;
@@ -153,4 +197,7 @@ a {
   color: var(--white);
   font-size: var(--fs-16);
   background-color: transparent;
+}
+.header .list .search-box:has(input:focus) {
+  border: 2px solid var(--dager);
 }
