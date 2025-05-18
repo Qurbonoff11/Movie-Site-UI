@@ -1,0 +1,127 @@
+/* MAIN */
+.main {
+  width: 100%;
+  height: 100%;
+  background-color: var(--gray-11);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 80px;
+}
+
+.hero-section {
+  width: 1820px;
+  height: 100%;
+}
+
+.hero-section .container{
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 4;
+  grid-template-rows: 7;
+  gap: 8px;
+}
+.div5 {
+  grid-column-start: 4;
+  grid-row-start: 2;
+}
+.div6 {
+  grid-column-start: 4;
+  grid-row-start: 3;
+}
+.div7 {
+  grid-column-start: 3;
+  grid-row-start: 3;
+}
+.div8 {
+  grid-column-start: 3;
+  grid-row-start: 2;
+}
+.div9 {
+  grid-column-start: 2;
+  grid-row-start: 2;
+}
+.div10 {
+  grid-column-start: 2;
+  grid-row-start: 3;
+}
+.div11 {
+  grid-column-start: 2;
+  grid-row-start: 4;
+}
+.div12 {
+  grid-column-start: 1;
+  grid-row-start: 4;
+}
+.div13 {
+  grid-column-start: 1;
+  grid-row-start: 3;
+}
+.div14 {
+  grid-column-start: 1;
+  grid-row-start: 2;
+}
+.div17 {
+  grid-column-start: 4;
+  grid-row-start: 5;
+}
+.div18 {
+  grid-column-start: 3;
+  grid-row-start: 5;
+}
+.div19 {
+  grid-column-start: 2;
+  grid-row-start: 5;
+}
+.div20 {
+  grid-column-start: 1;
+  grid-row-start: 5;
+}
+.div25 {
+  grid-column-start: 4;
+  grid-row-start: 7;
+}
+.div26 {
+  grid-column-start: 3;
+  grid-row-start: 7;
+}
+.div27 {
+  grid-column-start: 2;
+  grid-row-start: 7;
+}
+.div28 {
+  grid-column-start: 1;
+  grid-row-start: 7;
+}
+
+.main .card {
+  width: 425px;
+  height: 350px;
+  background-color: var(--gray-22);
+  padding: 15px;
+  border-radius: 1rem;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main .card h4 {
+  color: var(--white);
+  font-family: var(--poppins);
+  text-transform: uppercase;
+  font-weight: var(--fw-5);
+}
+
+.main .card .card-img {
+  width: 100%;
+  height: 267px;
+  background-image: url("../assets/img/movie/image.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1rem;
+}

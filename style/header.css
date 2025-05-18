@@ -1,0 +1,149 @@
+/* HEADER */
+.header {
+  width: 100%;
+  height: 80px;
+  background: var(--gray-15);
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.header .container {
+  width: 1820px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo-img {
+  height: 50px;
+}
+.header .logo-img:hover{
+  backdrop-filter: box-shadow(0 0 10px var(--dager));
+}
+
+.header .list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.header .list ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  letter-spacing: 1px;
+}
+.header .list ul li{
+  position: relative;
+}
+.header .list ul li a {
+  color: var(--white);
+  font-family: var(--poppins);
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: var(--fs-16);
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  padding-bottom: 2px;
+}
+.header .list ul li a:hover {
+  color: var(--dager);
+}
+.header .list ul li a::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: var(--dager);
+  transition: all .3s ease-in-out;
+}
+.header .list ul li a:hover::after{
+  width: 100%;
+}
+
+.header .list .country-list,
+.header .list .genre-list,
+.header .list .year-list{
+  position: absolute;
+  top: 25px;
+  left: 0;
+  width: 210px;
+  height: 350px;
+  display: none;
+  justify-content: space-a;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--gray-15);
+  padding: 20px;
+  border-radius: 1rem;
+  /* transition: all .7s ease-in-out; */
+}
+.country:hover .country-list,
+.genre:hover .genre-list,
+.year:hover .year-list{
+  display: flex;
+}
+.header .list .country-list button,
+.header .list .genre-list button,
+.header .list .year-list button{
+  width: 170px;
+  padding: .6rem;
+  border: none;
+  color: var(--white);
+  font-family: var(--poppins);
+  font-weight: var(--fw-6);
+  background-color: transparent;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+.header .list .country-list button:hover,
+.header .list .genre-list button:hover,
+.header .list .year-list button:hover{
+  background-color: var(--gray-22);
+}
+
+.header .list .search-box {
+  width: 400px;
+  height: 40px;
+  background-color: var(--gray-22);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+  border-radius: 50px;
+  gap: 1rem;
+  border: 2px solid transparent;
+  transition: all .3s ease-in-out;
+}
+.header .list .search-box i {
+  font-size: var(--fs-16);
+  color: var(--white);
+}
+.header .list .search-box .search {
+  width: 80%;
+  height: 40px;
+  outline: none;
+  border: none;
+  color: var(--white);
+  font-size: var(--fs-16);
+  background-color: transparent;
+}
+.header .list .search-box .search::placeholder{
+  text-transform: uppercase;
+  font-weight: var(--fw-6);
+  font-size: var(--fs-16);
+  color: #444;
+
+}
+.header .list .search-box:has(input:focus) {
+  border: 2px solid var(--dager);
+}
