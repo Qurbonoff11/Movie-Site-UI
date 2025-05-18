@@ -301,3 +301,24 @@ searchInp.addEventListener("input", () => {
     heroSec.append(moviesCard);
   });
 })
+
+topFilms.addEventListener("click", () => {
+  const sortedMovies = movies.sort((a, b) => b.rating - a.rating);
+  heroSec.innerHTML = "";
+  sortedMovies.forEach((movie) => {
+    const moviesCard = $HTML.createElement("div");
+    moviesCard.classList.add("card");
+    moviesCard.innerHTML += `
+      <div class="card-img"></div>
+      <div class="card-info">
+        <h4>${movie.movieName}</h4>
+        <p>Yili: <span>${movie.year}</span></p>
+        <p>Tili: <span>${movie.language}</span></p>
+        <p>Davlati: <span>${movie.country}</span></p>
+        <p>Janri: <span>${movie.genre}</span></p>
+        <p>Reyting: <span>${movie.rating}</span></p>
+      </div>
+    `;
+    heroSec.append(moviesCard);
+  });
+})
