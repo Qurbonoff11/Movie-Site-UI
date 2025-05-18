@@ -2,7 +2,7 @@
 
 const $HTML = document;
 
-const kinolar = [
+const movies = [
   {
     movieName: "Boshlang'ich",
     year: 2010,
@@ -10,7 +10,7 @@ const kinolar = [
     country: "AQSH",
     genre: ["Fantastika", "Triller", "Drama"],
     rating: 8.8,
-    movieImage: "../assets/img/movie/image.png"
+    movieImage: "../assets/img/movie/image.png",
   },
   {
     movieName: "Parazit",
@@ -19,7 +19,7 @@ const kinolar = [
     country: "Janubiy Koreya",
     genre: ["Drama", "Triller", "Komediya"],
     rating: 8.6,
-    movieImage: "../assets/img/movie/image.png"
+    movieImage: "../assets/img/movie/image.png",
   },
   {
     movieName: "G'azab yo'li",
@@ -28,7 +28,7 @@ const kinolar = [
     country: "Avstraliya, AQSH",
     genre: ["Jangari", "Fantastika", "Sarguzasht"],
     rating: 8.1,
-    movieImage: "../assets/img/movie/image.png"
+    movieImage: "../assets/img/movie/image.png",
   },
   {
     movieName: "Qorong'u ritsar",
@@ -37,7 +37,7 @@ const kinolar = [
     country: "AQSH",
     genre: ["Jangari", "Kriminal", "Drama"],
     rating: 9.0,
-    movieImage: "../assets/img/movie/image.png"
+    movieImage: "../assets/img/movie/image.png",
   },
   {
     movieName: "Busanga yo'l",
@@ -46,7 +46,7 @@ const kinolar = [
     country: "Janubiy Koreya",
     genre: ["Qo'rqinchli", "Triller", "Drama"],
     rating: 7.6,
-    movieImage: "../assets/img/movie/image.png"
+    movieImage: "../assets/img/movie/image.png",
   },
   {
     movieName: "Yulduzlar oralig'ida",
@@ -55,7 +55,7 @@ const kinolar = [
     country: "AQSH",
     genre: ["Fantastika", "Drama", "Sarguzasht"],
     rating: 8.6,
-    movieImage: "../assets/img/movie/image.png"
+    movieImage: "../assets/img/movie/image.png",
   },
   {
     movieName: "Qasoskorlar",
@@ -64,7 +64,7 @@ const kinolar = [
     country: "AQSH",
     genre: ["Jangari", "Fantastika", "Sarguzasht"],
     rating: 8.0,
-    movieImage: "../assets/img/movie/image.png"
+    movieImage: "../assets/img/movie/image.png",
   },
   {
     movieName: "Hammasi bir joyda",
@@ -73,7 +73,7 @@ const kinolar = [
     country: "AQSH",
     genre: ["Fantastika", "Komediya", "Drama"],
     rating: 8.1,
-    movieImage: "../assets/img/movie/image.png"
+    movieImage: "../assets/img/movie/image.png",
   },
   {
     movieName: "Matritsa",
@@ -82,7 +82,7 @@ const kinolar = [
     country: "AQSH",
     genre: ["Fantastika", "Jangari", "Triller"],
     rating: 8.7,
-    movieImage: "../assets/img/movie/image.png"
+    movieImage: "../assets/img/movie/image.png",
   },
   {
     movieName: "Buyuk Budapesht mehmonxonasi",
@@ -91,7 +91,7 @@ const kinolar = [
     country: "AQSH, Germaniya",
     genre: ["Komediya", "Drama", "Jinoyat"],
     rating: 8.1,
-    movieImage: "../assets/img/movie/image.png"
+    movieImage: "../assets/img/movie/image.png",
   },
   {
     movieName: "Jinoyat shahri",
@@ -100,7 +100,7 @@ const kinolar = [
     country: "AQSH",
     genre: ["Kriminal", "Triller", "Drama"],
     rating: 8.0,
-    movieImage: "../assets/img/movie/image.png"
+    movieImage: "../assets/img/movie/image.png",
   },
   {
     movieName: "Shutter oroli",
@@ -109,7 +109,7 @@ const kinolar = [
     country: "AQSH",
     genre: ["Triller", "Sirlilik", "Drama"],
     rating: 8.2,
-    movieImage: "../assets/img/movie/image.png"
+    movieImage: "../assets/img/movie/image.png",
   },
   {
     movieName: "Qora pantera",
@@ -118,7 +118,7 @@ const kinolar = [
     country: "AQSH",
     genre: ["Fantastika", "Jangari", "Drama"],
     rating: 7.3,
-    movieImage: "../assets/img/movie/image.png"
+    movieImage: "../assets/img/movie/image.png",
   },
   {
     movieName: "O'rgimchak odam: Uydan yiroqda",
@@ -127,7 +127,7 @@ const kinolar = [
     country: "AQSH",
     genre: ["Jangari", "Fantastika", "Komediya"],
     rating: 7.5,
-    movieImage: "../assets/img/movie/image.png"
+    movieImage: "../assets/img/movie/image.png",
   },
   {
     movieName: "Doktor Strange",
@@ -136,7 +136,7 @@ const kinolar = [
     country: "AQSH",
     genre: ["Fantastika", "Sarguzasht", "Jangari"],
     rating: 7.5,
-    movieImage: "../assets/img/movie/image.png"
+    movieImage: "../assets/img/movie/image.png",
   },
   {
     movieName: "So'nggi Jedi",
@@ -145,7 +145,7 @@ const kinolar = [
     country: "AQSH",
     genre: ["Fantastika", "Sarguzasht", "Drama"],
     rating: 6.9,
-    movieImage: "../assets/img/movie/image.png"
+    movieImage: "../assets/img/movie/image.png",
   },
   {
     movieName: "Jasur yurak",
@@ -154,7 +154,7 @@ const kinolar = [
     country: "AQSH",
     genre: ["Tarixiy", "Drama", "Jangari"],
     rating: 8.3,
-    movieImage: "../assets/img/movie/image.png"
+    movieImage: "../assets/img/movie/image.png",
   },
   {
     movieName: "Tog' orqasidagi qiz",
@@ -163,7 +163,7 @@ const kinolar = [
     country: "AQSH",
     genre: ["Drama", "Romantik", "Triller"],
     rating: 7.1,
-    movieImage: "../assets/img/movie/image.png"
+    movieImage: "../assets/img/movie/image.png",
   },
   {
     movieName: "Marslik",
@@ -172,7 +172,7 @@ const kinolar = [
     country: "AQSH",
     genre: ["Fantastika", "Sarguzasht", "Drama"],
     rating: 8.0,
-    movieImage: "../assets/img/movie/image.png"
+    movieImage: "../assets/img/movie/image.png",
   },
   {
     movieName: "Sherlok Xolms",
@@ -181,7 +181,7 @@ const kinolar = [
     country: "AQSH, Britaniya",
     genre: ["Detektiv", "Sarguzasht", "Triller"],
     rating: 7.6,
-    movieImage: "../assets/img/movie/image.png"
+    movieImage: "../assets/img/movie/image.png",
   },
   {
     movieName: "Temir odam",
@@ -190,7 +190,7 @@ const kinolar = [
     country: "AQSH",
     genre: ["Fantastika", "Jangari", "Drama"],
     rating: 7.9,
-    movieImage: "../assets/img/movie/image.png"
+    movieImage: "../assets/img/movie/image.png",
   },
   {
     movieName: "Qirol sher",
@@ -199,7 +199,7 @@ const kinolar = [
     country: "AQSH",
     genre: ["Multfilm", "Drama", "Musiqiy"],
     rating: 8.5,
-    movieImage: "../assets/img/movie/image.png"
+    movieImage: "../assets/img/movie/image.png",
   },
   {
     movieName: "Yashil yo'l",
@@ -208,7 +208,7 @@ const kinolar = [
     country: "AQSH",
     genre: ["Drama", "Fantastika", "Kriminal"],
     rating: 8.6,
-    movieImage: "../assets/img/movie/image.png"
+    movieImage: "../assets/img/movie/image.png",
   },
   {
     movieName: "Titanik",
@@ -217,7 +217,7 @@ const kinolar = [
     country: "AQSH",
     genre: ["Romantik", "Drama", "Tarixiy"],
     rating: 7.9,
-    movieImage: "../assets/img/movie/image.png"
+    movieImage: "../assets/img/movie/image.png",
   },
   {
     movieName: "Avatar",
@@ -226,7 +226,7 @@ const kinolar = [
     country: "AQSH",
     genre: ["Fantastika", "Sarguzasht", "Drama"],
     rating: 7.8,
-    movieImage: "../assets/img/movie/image.png"
+    movieImage: "../assets/img/movie/image.png",
   },
   {
     movieName: "Qasoskorlar: Oxirgi jang",
@@ -235,7 +235,7 @@ const kinolar = [
     country: "AQSH",
     genre: ["Fantastika", "Jangari", "Drama"],
     rating: 8.4,
-    movieImage: "../assets/img/movie/image.png"
+    movieImage: "../assets/img/movie/image.png",
   },
   {
     movieName: "Zo'ravonlar shahri",
@@ -244,7 +244,7 @@ const kinolar = [
     country: "AQSH",
     genre: ["Kriminal", "Drama", "Jangari"],
     rating: 7.2,
-    movieImage: "../assets/img/movie/image.png"
+    movieImage: "../assets/img/movie/image.png",
   },
   {
     movieName: "Qora oynali xona",
@@ -253,38 +253,51 @@ const kinolar = [
     country: "Britaniya",
     genre: ["Triller", "Sirlilik", "Drama"],
     rating: 6.8,
-    movieImage: "../assets/img/movie/image.png"
-  },
-  {
-    movieName: "Hayot yo'li",
-    year: 2016,
-    language: "UZ",
-    country: "AQSH",
-    genre: ["Drama", "Motivatsion", "Biografiya"],
-    rating: 7.7,
-    movieImage: "../assets/img/movie/image.png"
-  },
-  {
-    movieName: "Bo'ri chaqiruvi",
-    year: 2020,
-    language: "UZ",
-    country: "AQSH",
-    genre: ["Sarguzasht", "Drama", "Oilaviy"],
-    rating: 6.9,
-    movieImage: "../assets/img/movie/image.png"
-  },
-  {
-    movieName: "Jinoyatchilar shahri",
-    year: 2022,
-    language: "UZ",
-    country: "Fransiya, AQSH",
-    genre: ["Jangari", "Triller", "Kriminal"],
-    rating: 6.5,
-    movieImage: "../assets/img/movie/image.png"
+    movieImage: "../assets/img/movie/image.png",
   },
 ];
 
 // Elementlarni tanlab olish
-const heroSec = $HTML.querySelector(".hero-section");
+const heroSec = $HTML.querySelector(".cont");
 const searchInp = $HTML.querySelector("#search");
 
+movies.forEach((movie) => {
+  const moviesCard = $HTML.createElement("div");
+  moviesCard.classList.add("card");
+  moviesCard.innerHTML += `
+    <div class="card-img"></div>
+    <div class="card-info">
+      <h4>${movie.movieName}</h4>
+      <p>Yili: <span>${movie.year}</span></p>
+      <p>Tili: <span>${movie.language}</span></p>
+      <p>Davlati: <span>${movie.country}</span></p>
+      <p>Janri: <span>${movie.genre}</span></p>
+      <p>Reyting: <span>${movie.rating}</span></p>
+    </div>
+  `;
+  heroSec.append(moviesCard);
+});
+
+searchInp.addEventListener("input", () => {
+  const searchValue = searchInp.value.toLowerCase();
+  const filteredMovies = movies.filter((movie) =>
+    movie.movieName.toLowerCase().includes(searchValue)
+  );
+  heroSec.innerHTML = "";
+  filteredMovies.forEach((movie) => {
+    const moviesCard = $HTML.createElement("div");
+    moviesCard.classList.add("card");
+    moviesCard.innerHTML += `
+      <div class="card-img"></div>
+      <div class="card-info">
+        <h4>${movie.movieName}</h4>
+        <p>Yili: <span>${movie.year}</span></p>
+        <p>Tili: <span>${movie.language}</span></p>
+        <p>Davlati: <span>${movie.country}</span></p>
+        <p>Janri: <span>${movie.genre}</span></p>
+        <p>Reyting: <span>${movie.rating}</span></p>
+      </div>
+    `;
+    heroSec.append(moviesCard);
+  });
+})
