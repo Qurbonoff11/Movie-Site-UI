@@ -61,8 +61,12 @@
   box-sizing: border-box;
 }
 
-UL,
-OL {
+body {
+  background-color: var(--gray-11);
+}
+
+ul,
+ol {
   list-style: none;
 }
 

@@ -258,67 +258,57 @@ const movies = [
 ];
 
 // Elementlarni tanlab olish
-const heroSec = $HTML.querySelector(".cont");
+const contSec = $HTML.querySelector(".cont");
+const heroSec = $HTML.querySelector(".hero-section");
 const searchInp = $HTML.querySelector("#search");
+const topFilms = $HTML.querySelector(".top");
 
-movies.forEach((movie) => {
+const createCard = (param) => {
   const moviesCard = $HTML.createElement("div");
   moviesCard.classList.add("card");
+
+  const {movieName, year, language, country, genre, rating, movieImage} = param
+
   moviesCard.innerHTML += `
-    <div class="card-img"></div>
+    <img class="card-img" src="${movieImage}"></img>
     <div class="card-info">
-      <h4>${movie.movieName}</h4>
-      <p>Yili: <span>${movie.year}</span></p>
-      <p>Tili: <span>${movie.language}</span></p>
-      <p>Davlati: <span>${movie.country}</span></p>
-      <p>Janri: <span>${movie.genre}</span></p>
-      <p>Reyting: <span>${movie.rating}</span></p>
+      <h4>${movieName}</h4>
+      <p>Yili: <span>${year}</span></p>
+      <p>Tili: <span>${language}</span></p>
+      <p>Davlati: <span>${country}</span></p>
+      <p>Janri: <span>${genre}</span></p>
+      <p>Reyting: <span>${rating}</span></p>
     </div>
   `;
-  heroSec.append(moviesCard);
+  contSec.append(moviesCard);
+}
+
+movies.forEach((movie) => {
+  createCard(movie);
 });
 
 searchInp.addEventListener("input", () => {
   const searchValue = searchInp.value.toLowerCase();
-  const filteredMovies = movies.filter((movie) =>
-    movie.movieName.toLowerCase().includes(searchValue)
+  const filteredMovies = movies.filter((movies) =>
+    movies.movieName.toLowerCase().includes(searchValue)
   );
-  heroSec.innerHTML = "";
-  filteredMovies.forEach((movie) => {
-    const moviesCard = $HTML.createElement("div");
-    moviesCard.classList.add("card");
-    moviesCard.innerHTML += `
-      <div class="card-img"></div>
-      <div class="card-info">
-        <h4>${movie.movieName}</h4>
-        <p>Yili: <span>${movie.year}</span></p>
-        <p>Tili: <span>${movie.language}</span></p>
-        <p>Davlati: <span>${movie.country}</span></p>
-        <p>Janri: <span>${movie.genre}</span></p>
-        <p>Reyting: <span>${movie.rating}</span></p>
-      </div>
-    `;
-    heroSec.append(moviesCard);
-  });
+  contSec.innerHTML = "";
+  filteredMovies.length>0?
+    filteredMovies.forEach(function(item){
+      createCard(item);
+    })
+    :heroSec.innerHTML = `
+      <h2 class="not-found">film Topilmadi</h2>
+    `
 })
 
 topFilms.addEventListener("click", () => {
-  const sortedMovies = movies.sort((a, b) => b.rating - a.rating);
-  heroSec.innerHTML = "";
-  sortedMovies.forEach((movie) => {
-    const moviesCard = $HTML.createElement("div");
-    moviesCard.classList.add("card");
-    moviesCard.innerHTML += `
-      <div class="card-img"></div>
-      <div class="card-info">
-        <h4>${movie.movieName}</h4>
-        <p>Yili: <span>${movie.year}</span></p>
-        <p>Tili: <span>${movie.language}</span></p>
-        <p>Davlati: <span>${movie.country}</span></p>
-        <p>Janri: <span>${movie.genre}</span></p>
-        <p>Reyting: <span>${movie.rating}</span></p>
-      </div>
-    `;
-    heroSec.append(moviesCard);
+  const sortedMovies = movies.sort((a, b) => {
+    return b.rating - a.rating;
   });
+  contSec.innerHTML = "";
+
+  sortedMovies.forEach(function(item){
+    createCard(item);
+  })
 })
