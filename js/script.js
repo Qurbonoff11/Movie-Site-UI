@@ -8,7 +8,7 @@ const movies = [
     year: 2010,
     language: "UZ",
     country: "AQSH",
-    genre: ["Fantastika", "Triller", "Drama"],
+    genre: ["Fantastika ", "Triller ", "Drama "],
     rating: 8.8,
     movieImage: "../assets/img/movie/image.png",
   },
@@ -17,7 +17,7 @@ const movies = [
     year: 2019,
     language: "UZ",
     country: "Janubiy Koreya",
-    genre: ["Drama", "Triller", "Komediya"],
+    genre: ["Drama ", "Triller ", "Komediya "],
     rating: 8.6,
     movieImage: "../assets/img/movie/image.png",
   },
@@ -26,7 +26,7 @@ const movies = [
     year: 2015,
     language: "UZ",
     country: "Avstraliya, AQSH",
-    genre: ["Jangari", "Fantastika", "Sarguzasht"],
+    genre: ["Jangari ", "Fantastika ", "Sarguzasht "],
     rating: 8.1,
     movieImage: "../assets/img/movie/image.png",
   },
@@ -35,7 +35,7 @@ const movies = [
     year: 2008,
     language: "UZ",
     country: "AQSH",
-    genre: ["Jangari", "Kriminal", "Drama"],
+    genre: ["Jangari ", "Kriminal ", "Drama "],
     rating: 9.0,
     movieImage: "../assets/img/movie/image.png",
   },
@@ -44,7 +44,7 @@ const movies = [
     year: 2016,
     language: "UZ",
     country: "Janubiy Koreya",
-    genre: ["Qo'rqinchli", "Triller", "Drama"],
+    genre: ["Qo'rqinchli ", "Triller ", "Drama "],
     rating: 7.6,
     movieImage: "../assets/img/movie/image.png",
   },
@@ -53,7 +53,7 @@ const movies = [
     year: 2014,
     language: "UZ",
     country: "AQSH",
-    genre: ["Fantastika", "Drama", "Sarguzasht"],
+    genre: ["Fantastika ", "Drama ", "Sarguzasht "],
     rating: 8.6,
     movieImage: "../assets/img/movie/image.png",
   },
@@ -62,7 +62,7 @@ const movies = [
     year: 2012,
     language: "UZ",
     country: "AQSH",
-    genre: ["Jangari", "Fantastika", "Sarguzasht"],
+    genre: ["Jangari ", "Fantastika ", "Sarguzasht "],
     rating: 8.0,
     movieImage: "../assets/img/movie/image.png",
   },
@@ -71,7 +71,7 @@ const movies = [
     year: 2022,
     language: "UZ",
     country: "AQSH",
-    genre: ["Fantastika", "Komediya", "Drama"],
+    genre: ["Fantastika ", "Komediya ", "Drama "],
     rating: 8.1,
     movieImage: "../assets/img/movie/image.png",
   },
@@ -80,7 +80,7 @@ const movies = [
     year: 1999,
     language: "UZ",
     country: "AQSH",
-    genre: ["Fantastika", "Jangari", "Triller"],
+    genre: ["Fantastika ", "Jangari ", "Triller "],
     rating: 8.7,
     movieImage: "../assets/img/movie/image.png",
   },
@@ -89,7 +89,7 @@ const movies = [
     year: 2014,
     language: "UZ",
     country: "AQSH, Germaniya",
-    genre: ["Komediya", "Drama", "Jinoyat"],
+    genre: ["Komediya ", "Drama ", "Jinoyat "],
     rating: 8.1,
     movieImage: "../assets/img/movie/image.png",
   },
@@ -98,7 +98,7 @@ const movies = [
     year: 2005,
     language: "UZ",
     country: "AQSH",
-    genre: ["Kriminal", "Triller", "Drama"],
+    genre: ["Kriminal ", "Triller ", "Drama "],
     rating: 8.0,
     movieImage: "../assets/img/movie/image.png",
   },
@@ -107,7 +107,7 @@ const movies = [
     year: 2010,
     language: "UZ",
     country: "AQSH",
-    genre: ["Triller", "Sirlilik", "Drama"],
+    genre: ["Triller ", "Sirlilik ", "Drama "],
     rating: 8.2,
     movieImage: "../assets/img/movie/image.png",
   },
@@ -116,7 +116,7 @@ const movies = [
     year: 2018,
     language: "UZ",
     country: "AQSH",
-    genre: ["Fantastika", "Jangari", "Drama"],
+    genre: ["Fantastika ", "Jangari ", "Drama "],
     rating: 7.3,
     movieImage: "../assets/img/movie/image.png",
   },
@@ -125,7 +125,7 @@ const movies = [
     year: 2019,
     language: "UZ",
     country: "AQSH",
-    genre: ["Jangari", "Fantastika", "Komediya"],
+    genre: ["Jangari ", "Fantastika ", "Komediya "],
     rating: 7.5,
     movieImage: "../assets/img/movie/image.png",
   },
@@ -134,7 +134,7 @@ const movies = [
     year: 2016,
     language: "UZ",
     country: "AQSH",
-    genre: ["Fantastika", "Sarguzasht", "Jangari"],
+    genre: ["Fantastika ", "Sarguzasht ", "Jangari "],
     rating: 7.5,
     movieImage: "../assets/img/movie/image.png",
   },
@@ -143,7 +143,7 @@ const movies = [
     year: 2017,
     language: "UZ",
     country: "AQSH",
-    genre: ["Fantastika", "Sarguzasht", "Drama"],
+    genre: ["Fantastika ", "Sarguzasht ", "Drama "],
     rating: 6.9,
     movieImage: "../assets/img/movie/image.png",
   },
@@ -152,7 +152,7 @@ const movies = [
     year: 1995,
     language: "UZ",
     country: "AQSH",
-    genre: ["Tarixiy", "Drama", "Jangari"],
+    genre: ["Tarixiy", "Drama ", "Jangari "],
     rating: 8.3,
     movieImage: "../assets/img/movie/image.png",
   },
@@ -161,7 +161,7 @@ const movies = [
     year: 2011,
     language: "UZ",
     country: "AQSH",
-    genre: ["Drama", "Romantik", "Triller"],
+    genre: ["Drama ", "Romantik", "Triller "],
     rating: 7.1,
     movieImage: "../assets/img/movie/image.png",
   },
@@ -170,7 +170,7 @@ const movies = [
     year: 2015,
     language: "UZ",
     country: "AQSH",
-    genre: ["Fantastika", "Sarguzasht", "Drama"],
+    genre: ["Fantastika ", "Sarguzasht ", "Drama "],
     rating: 8.0,
     movieImage: "../assets/img/movie/image.png",
   },
@@ -179,7 +179,7 @@ const movies = [
     year: 2009,
     language: "UZ",
     country: "AQSH, Britaniya",
-    genre: ["Detektiv", "Sarguzasht", "Triller"],
+    genre: ["Detektiv", "Sarguzasht ", "Triller "],
     rating: 7.6,
     movieImage: "../assets/img/movie/image.png",
   },
@@ -188,7 +188,7 @@ const movies = [
     year: 2008,
     language: "UZ",
     country: "AQSH",
-    genre: ["Fantastika", "Jangari", "Drama"],
+    genre: ["Fantastika ", "Jangari ", "Drama "],
     rating: 7.9,
     movieImage: "../assets/img/movie/image.png",
   },
@@ -197,7 +197,7 @@ const movies = [
     year: 1994,
     language: "UZ",
     country: "AQSH",
-    genre: ["Multfilm", "Drama", "Musiqiy"],
+    genre: ["Multfilm", "Drama ", "Musiqiy"],
     rating: 8.5,
     movieImage: "../assets/img/movie/image.png",
   },
@@ -206,7 +206,7 @@ const movies = [
     year: 1999,
     language: "UZ",
     country: "AQSH",
-    genre: ["Drama", "Fantastika", "Kriminal"],
+    genre: ["Drama ", "Fantastika ", "Kriminal "],
     rating: 8.6,
     movieImage: "../assets/img/movie/image.png",
   },
@@ -215,7 +215,7 @@ const movies = [
     year: 1997,
     language: "UZ",
     country: "AQSH",
-    genre: ["Romantik", "Drama", "Tarixiy"],
+    genre: ["Romantik", "Drama ", "Tarixiy"],
     rating: 7.9,
     movieImage: "../assets/img/movie/image.png",
   },
@@ -224,7 +224,7 @@ const movies = [
     year: 2009,
     language: "UZ",
     country: "AQSH",
-    genre: ["Fantastika", "Sarguzasht", "Drama"],
+    genre: ["Fantastika ", "Sarguzasht ", "Drama "],
     rating: 7.8,
     movieImage: "../assets/img/movie/image.png",
   },
@@ -233,7 +233,7 @@ const movies = [
     year: 2019,
     language: "UZ",
     country: "AQSH",
-    genre: ["Fantastika", "Jangari", "Drama"],
+    genre: ["Fantastika ", "Jangari ", "Drama "],
     rating: 8.4,
     movieImage: "../assets/img/movie/image.png",
   },
@@ -242,7 +242,7 @@ const movies = [
     year: 2021,
     language: "UZ",
     country: "AQSH",
-    genre: ["Kriminal", "Drama", "Jangari"],
+    genre: ["Kriminal ", "Drama ", "Jangari "],
     rating: 7.2,
     movieImage: "../assets/img/movie/image.png",
   },
@@ -251,13 +251,14 @@ const movies = [
     year: 2020,
     language: "UZ",
     country: "Britaniya",
-    genre: ["Triller", "Sirlilik", "Drama"],
+    genre: ["Triller ", "Sirlilik ", "Drama "],
     rating: 6.8,
     movieImage: "../assets/img/movie/image.png",
   },
 ];
 
 // Elementlarni tanlab olish
+const main = $HTML.querySelector(".main");
 const contSec = $HTML.querySelector(".cont");
 const heroSec = $HTML.querySelector(".hero-section");
 const searchInp = $HTML.querySelector("#search");
@@ -267,7 +268,8 @@ const createCard = (param) => {
   const moviesCard = $HTML.createElement("div");
   moviesCard.classList.add("card");
 
-  const {movieName, year, language, country, genre, rating, movieImage} = param
+  const { movieName, year, language, country, genre, rating, movieImage } =
+    param;
 
   moviesCard.innerHTML += `
     <img class="card-img" src="${movieImage}"></img>
@@ -281,7 +283,7 @@ const createCard = (param) => {
     </div>
   `;
   contSec.append(moviesCard);
-}
+};
 
 movies.forEach((movie) => {
   createCard(movie);
@@ -293,14 +295,17 @@ searchInp.addEventListener("input", () => {
     movies.movieName.toLowerCase().includes(searchValue)
   );
   contSec.innerHTML = "";
-  filteredMovies.length>0?
-    filteredMovies.forEach(function(item){
-      createCard(item);
-    })
-    :heroSec.innerHTML = `
-      <h2 class="not-found">film Topilmadi</h2>
-    `
-})
+
+  filteredMovies.length > 0
+    ? filteredMovies.forEach(function (item) {
+        createCard(item);
+        console.log(item);
+      })
+    :(contSec.innerHTML = `
+      <h2 class="not-found">not found!</h2>
+    `),
+    console.log("not found");
+});
 
 topFilms.addEventListener("click", () => {
   const sortedMovies = movies.sort((a, b) => {
@@ -308,7 +313,7 @@ topFilms.addEventListener("click", () => {
   });
   contSec.innerHTML = "";
 
-  sortedMovies.forEach(function(item){
+  sortedMovies.forEach(function (item) {
     createCard(item);
-  })
-})
+  });
+});
