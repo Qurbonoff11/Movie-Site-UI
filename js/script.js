@@ -258,11 +258,11 @@ const movies = [
 ];
 
 // Elementlarni tanlab olish
-const main = $HTML.querySelector(".main");
-const contSec = $HTML.querySelector(".cont");
-const heroSec = $HTML.querySelector(".hero-section");
-const searchInp = $HTML.querySelector("#search");
-const topFilms = $HTML.querySelector(".top");
+let main = $HTML.querySelector(".main");
+let contSec = $HTML.querySelector(".cont");
+let heroSec = $HTML.querySelector(".hero-section");
+let searchInp = $HTML.querySelector("#search");
+let topFilms = $HTML.querySelector(".top");
 
 const createCard = (param) => {
   const moviesCard = $HTML.createElement("div");

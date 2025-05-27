@@ -9,7 +9,10 @@
   /* COLORS */
   --black: #111;
   --white: #fff;
+  --white-ee: #eee;
+  --white-dd: #ddd;
   --gray-22: #222;
+  --gray-33: #333;
   --gray-15: #151515;
   --gray-11: #111;
   --gray-19: #191919;
@@ -63,6 +66,7 @@
 
 body {
   background-color: var(--gray-11);
+  position: relative;
 }
 
 ul,

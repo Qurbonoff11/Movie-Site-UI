@@ -8,7 +8,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  z-index: 999;
+  z-index: 998;
 }
 
 .header .container {
@@ -147,4 +147,29 @@
 }
 .header .list .search-box:has(input:focus) {
   border: 2px solid var(--dager);
+}
+
+.header .list .account .login-btn{
+  background-color: transparent;
+  border: 2px solid var(--white);
+  border-radius: 50%;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  color: var(--white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+
+.header .list .account .login-btn .loginIcn{
+  font-size: 1.7rem;
+  font-weight: var(--fw-2);
+}
+
+.header .list .account .login-btn:hover{
+  border: 2px solid var(--dager);
+  color: var(--dager);
 }
